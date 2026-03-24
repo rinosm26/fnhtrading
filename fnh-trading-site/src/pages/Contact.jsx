@@ -6,7 +6,7 @@ const Contact = () => {
       {/* Header Section */}
       <div className="bg-slate-900 py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Book Your Appointment</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Book Your Appointment Date</h1>
           <p className="text-slate-400 max-w-xl mx-auto">
             Ready to give your vehicle the treatment it deserves? Fill out the form below or reach out directly.
           </p>
