@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Layout Components
 import Navbar from './components/Navbar';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 
 // Page Components
@@ -20,6 +20,7 @@ function App() {
       
       <div className="min-h-screen bg-gray-50">
         <Navbar />
+        <main className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
@@ -31,12 +32,13 @@ function App() {
             <Route path="*" element={<Home />} />
           
         </Routes>
+        </main>
 
         {/* The button stays on top of everything */}
         <WhatsAppButton />
 
         {/* 5. Global Footer */}
-        {/* <Footer /> */}
+        <Footer />
         
       </div>
     </Router>
