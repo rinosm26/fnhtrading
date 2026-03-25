@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Twitter, Youtube, Car, Mail, Phone, MapPin } from 'lucide-react';
+//import { FacebookIcon, Instagram, Twitter, Youtube, Car, Mail, Phone, MapPin } from 'lucide-react';
+import { Car, Mail, Phone, MapPin } from 'lucide-react';
+// Import the package.json file
+import packageJson from '../../package.json';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -21,18 +24,18 @@ const Footer = () => {
               Qatar's premier destination for automotive preservation. We specialize in high-end ceramic coatings and precision detailing for luxury vehicles.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="p-2 bg-slate-900 rounded-lg hover:text-blue-500 transition-colors border border-slate-800">
+              {/* <a href="#" className="p-2 bg-slate-900 rounded-lg hover:text-blue-500 transition-colors border border-slate-800">
                 <Instagram className="w-5 h-5" />
               </a>
               <a href="#" className="p-2 bg-slate-900 rounded-lg hover:text-blue-500 transition-colors border border-slate-800">
-                <Facebook className="w-5 h-5" />
+                <FacebookIcon className="w-5 h-5" />
               </a>
               <a href="#" className="p-2 bg-slate-900 rounded-lg hover:text-blue-500 transition-colors border border-slate-800">
                 <Twitter className="w-5 h-5" />
               </a>
               <a href="#" className="p-2 bg-slate-900 rounded-lg hover:text-blue-500 transition-colors border border-slate-800">
                 <Youtube className="w-5 h-5" />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -90,8 +93,14 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 space-y-4 md:space-y-0">
-          <p>© {currentYear} Elite Detail Qatar. All Rights Reserved.</p>
+          <p>
+            {/* Display the version here */}
+            <span className="version-tag">
+              v{packageJson.version}
+            </span>
+             © {currentYear} Elite Detail Qatar. All Rights Reserved.</p>
           <div className="flex space-x-6">
+            
             <a href="#" className="hover:text-slate-300">Privacy Policy</a>
             <a href="#" className="hover:text-slate-300">Terms of Service</a>
           </div>
