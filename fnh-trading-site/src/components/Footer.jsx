@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 //import { FacebookIcon, Instagram, Twitter, Youtube, Car, Mail, Phone, MapPin } from 'lucide-react';
 import { Car, Mail, Phone, MapPin } from 'lucide-react';
+// Import the package.json file
+import packageJson from '../../package.json';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -91,8 +93,14 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 space-y-4 md:space-y-0">
-          <p>© {currentYear} Elite Detail Qatar. All Rights Reserved.</p>
+          <p>
+            {/* Display the version here */}
+            <span className="version-tag">
+              v{packageJson.version}
+            </span>
+             © {currentYear} Elite Detail Qatar. All Rights Reserved.</p>
           <div className="flex space-x-6">
+            
             <a href="#" className="hover:text-slate-300">Privacy Policy</a>
             <a href="#" className="hover:text-slate-300">Terms of Service</a>
           </div>
