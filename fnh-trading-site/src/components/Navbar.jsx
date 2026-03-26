@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Car } from 'lucide-react';
+import myLogo from '../assets/fnh-logo.png'; 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,16 +19,26 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           
+          
           {/* Logo Section */}
           <Link to="/" className="flex items-center space-x-2">
-            <Car className="w-8 h-8 text-blue-600" />
-            <span className="text-xl font-bold tracking-tight text-gray-900">
-              ELITE<span className="text-blue-600">DETAIL</span>
-            </span>
+            <img src={myLogo} alt="FNH Trading Logo" className="w-28 h-28 object-contain " /> 
+            <div className="flex flex-col items-end text-right">
+              {/* Arabic Name Line */}
+              <span className="text-lg font-bold tracking-tight text-primary-fg" dir="rtl">
+                إف إن إتش <span className="text-primary-fg">للمقاولات والتجارة والخدمات</span>
+              </span>
+
+              {/* English Name Line */}
+              <span className="text-lg font-bold tracking-tight text-primary-light">
+                FNH<span className="text-primary-light"> CONTRACTING TRADING AND SERVICES</span>
+              </span>
+            </div>
           </Link>
+         
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-4">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -39,7 +50,7 @@ const Navbar = () => {
             ))}
             <Link
               to="/contact"
-              className="bg-blue-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200"
+              className="bg-primary-light text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-primary-hover transition-all shadow-lg shadow-blue-200"
             >
               Book Now
             </Link>

@@ -5,7 +5,7 @@ import { ShieldCheck, Zap, Award, Star } from 'lucide-react';
 const Home = () => {
   const stats = [
     { label: 'Cars Detailed', value: '500+', icon: <Zap className="w-5 h-5" /> },
-    { label: 'Expert Years', value: '16+', icon: <Award className="w-5 h-5" /> },
+    { label: 'Expert Years', value: '10+', icon: <Award className="w-5 h-5" /> },
     { label: 'Five Star Reviews', value: '100%', icon: <Star className="w-5 h-5" /> },
   ];
 
@@ -15,7 +15,7 @@ const Home = () => {
       <Hero />
 
       {/* 2. Quick Stats Bar: Builds instant trust */}
-      <div className="bg-blue-600 py-8">
+      <div className="bg-primary-light py-8">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {stats.map((stat, index) => (

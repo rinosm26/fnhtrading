@@ -24,7 +24,7 @@ const Hero = () => {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
-            Refining the Art of <span className="text-blue-500">Automotive</span> Perfection
+            Refining the Art of <span className="text-blue-600">Automotive</span> Perfection
           </h1>
           
           <p className="text-lg md:text-xl text-slate-300 mb-10 leading-relaxed">
@@ -35,7 +35,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               to="/contact"
-              className="flex items-center justify-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105"
+              className="flex items-center justify-center space-x-2 bg-primary-light hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105"
             >
               <span>Book Your Detail</span>
               <ArrowRight className="w-5 h-5" />
@@ -52,11 +52,11 @@ const Hero = () => {
           {/* Social Proof / Trust Markers */}
           <div className="mt-12 flex items-center space-x-6 text-slate-400">
             <div className="flex items-center space-x-2">
-              <CheckCircle className="w-5 h-5 text-blue-500" />
+              <CheckCircle className="w-5 h-5 text-primary-light" />
               <span className="text-sm font-medium">Certified Technicians</span>
             </div>
             <div className="flex items-center space-x-2">
-              <CheckCircle className="w-5 h-5 text-blue-500" />
+              <CheckCircle className="w-5 h-5 text-primary-light" />
               <span className="text-sm font-medium">Eco-Friendly Products</span>
             </div>
           </div>
