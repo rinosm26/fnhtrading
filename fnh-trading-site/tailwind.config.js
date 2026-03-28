@@ -7,9 +7,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Optional: Professional detailing colors
-        'detail-blue': '#1e3a8a',
-        'detail-gray': '#1f2937',
+        primary: {
+          light: '#1A3668',
+          dark: '#1A3668',
+          hover: '#F15A24',
+          fg: '#006837',
+        },
+        
       },
       animation: {
         'bounce-slow': 'bounce 3s infinite',
