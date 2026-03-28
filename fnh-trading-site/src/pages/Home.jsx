@@ -73,7 +73,7 @@ const Home = () => {
       </section>
 
       {/* 5. Final Call to Action */}
-      <section className="py-20 bg-slate-900 text-center">
+      {/* <section className="py-20 bg-slate-900 text-center">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-8">
             Experience the Showroom Shine Again
@@ -85,7 +85,7 @@ const Home = () => {
             Get a Free Quote
           </a>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

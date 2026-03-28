@@ -35,12 +35,12 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {addons.map((item, index) => (
               <div key={index} className="flex items-center p-6 bg-gray-50 rounded-2xl border border-gray-100 hover:border-blue-200 transition-colors">
-                <PlusCircle className="w-6 h-6 text-blue-600 mr-4" />
+                <PlusCircle className="w-6 h-6 text-primary-light mr-4" />
                 <div className="flex-grow">
                   <h4 className="font-bold text-slate-900">{item.name}</h4>
                   <p className="text-sm text-slate-500">{item.desc}</p>
                 </div>
-                <div className="font-bold text-blue-600">{item.price}</div>
+                <div className="font-bold text-primary-light">{item.price}</div>
               </div>
             ))}
           </div>
@@ -48,7 +48,7 @@ const Services = () => {
       </section>
 
       {/* Booking CTA */}
-      <section className="bg-blue-600 py-12">
+      {/* <section className="bg-blue-600 py-12">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-white">
           <div className="mb-6 md:mb-0">
             <h3 className="text-2xl font-bold italic">Unsure which package you need?</h3>
@@ -58,7 +58,7 @@ const Services = () => {
             Get a Quote
           </a>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

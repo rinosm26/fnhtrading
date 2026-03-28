@@ -43,17 +43,17 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 to={link.path}
-                className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors"
+                className="text-sm font-medium text-gray-600 hover:text-primary-light transition-colors"
               >
                 {link.name}
               </Link>
             ))}
-            <Link
+            {/* <Link
               to="/contact"
               className="bg-primary-light text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-primary-hover transition-all shadow-lg shadow-blue-200"
             >
               Book Now
-            </Link>
+            </Link> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -77,18 +77,18 @@ const Navbar = () => {
                 key={link.name}
                 to={link.path}
                 onClick={() => setIsOpen(false)}
-                className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-md"
+                className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-primary-light hover:bg-gray-50 rounded-md"
               >
                 {link.name}
               </Link>
             ))}
-            <Link
+            {/* <Link
               to="/contact"
               onClick={() => setIsOpen(false)}
               className="block w-full text-center bg-blue-600 text-white px-3 py-3 mt-4 rounded-md font-semibold"
             >
               Book Now
-            </Link>
+            </Link> */}
           </div>
         </div>
       )}
