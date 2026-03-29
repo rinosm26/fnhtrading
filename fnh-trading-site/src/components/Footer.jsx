@@ -4,6 +4,7 @@ import { Car, Mail, Phone, MapPin } from 'lucide-react';
 import { Facebook, Instagram, Youtube } from 'react-feather';
 // Import the package.json file
 import packageJson from '../../package.json';
+import myLogo from '../assets/fnh-logo.png'; 
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -14,16 +15,17 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
           
           {/* Brand Column */}
-          <div className="space-y-6 items-center">
-            <Link to="/" className="flex items-center space-x-4">
-              <span className="text-4xl font-bold tracking-tight text-blue-500">
-                FNH<span className="text-primary-light text-lg"> CONTRACTING TRADING AND SERVICES</span>
+          <div className="space-y-8 items-center">
+           <Link to="/" className="flex items-center space-x-4">
+              <img src={myLogo} className="w-28 h-28 object-contain bg-slate-300 dark:bg-transparent p-1 rounded-md" />
+              <span className="text-xl font-bold tracking-tight text-blue-500">
+                FNH<span className="text-blue-500 text-lg"> CONTRACTING TRADING AND SERVICES</span>
               </span>
             </Link>
             <p className="text-sm leading-relaxed text-slate-400">
               Qatar's premier destination for automotive and home preservation. We specialize in high-end ceramic coatings and precision detailing for luxury vehicles.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex items-center justify-center space-x-4">
               <a href="#" className="p-2 bg-slate-900 rounded-lg hover:text-[#E4405F] transition-colors border border-slate-800">
                 <Instagram className="w-5 h-5" />
               </a>
@@ -50,9 +52,9 @@ const Footer = () => {
           </div> */}
 
           {/* Contact Info */}
-          <div>
+          <div className="flex flex-col items-center text-center">
             <h3 className="text-white font-bold text-lg mb-6">Get In Touch</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-sm ">
               <li className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-blue-500" />
                 <span>+974 5555 0000</span>

@@ -17,12 +17,12 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-25">
           
           
           {/* Logo Section */}
           <Link to="/" className="flex items-center space-x-2">
-            <img src={myLogo} alt="FNH Trading Logo" className="w-28 h-28 object-contain " /> 
+            <img src={myLogo} alt="FNH Trading Logo" className="w-32 h-32 object-contain " /> 
             <div className="flex flex-col items-end text-right">
               {/* Arabic Name Line */}
               <span className="text-lg font-bold tracking-tight text-primary-fg" dir="rtl">

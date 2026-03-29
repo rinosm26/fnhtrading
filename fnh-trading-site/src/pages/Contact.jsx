@@ -51,7 +51,7 @@ const Contact = () => {
                 <textarea rows="4" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 outline-none transition-all" placeholder="Tell us about your car..."></textarea>
               </div>
 
-              <button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-blue-200">
+              <button type="submit" className="w-full bg-primary-light hover:bg-primary-hover text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-blue-200">
                 Confirm Booking Request
               </button>
             </form>

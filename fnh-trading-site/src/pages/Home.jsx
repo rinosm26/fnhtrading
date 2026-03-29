@@ -62,7 +62,7 @@ const Home = () => {
                   "Climate-Controlled Application Studio"
                 ].map((item, i) => (
                   <div key={i} className="flex items-center space-x-3">
-                    <ShieldCheck className="w-6 h-6 text-green-500" />
+                    <ShieldCheck className="w-6 h-6 text-primary-fg" />
                     <span className="font-semibold text-slate-700">{item}</span>
                   </div>
                 ))}
