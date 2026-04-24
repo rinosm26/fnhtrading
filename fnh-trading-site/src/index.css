@@ -1,6 +1,17 @@
+/* ✅ 1. Imports must be at the very top */
+@import url('https://googleapis.com');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 3. Your custom layers/styles go last */
+@layer base {
+  html:lang(ar) {
+    font-family: 'Tajawal', sans-serif;
+  }
+}
 
 /* You can add your custom CSS for the detailing site below this line */
 

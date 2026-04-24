@@ -2,16 +2,20 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Car } from 'lucide-react';
 import myLogo from '../assets/fnh-logo.png'; 
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const { t } = useTranslation();
+
   const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'Services', path: '/services' },
-    { name: 'Gallery', path: '/gallery' },
-    { name: 'About', path: '/about' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'nav.home', path: '/' },
+    { name: 'nav.services', path: '/services' },
+    { name: 'nav.gallery', path: '/gallery' },
+    { name: 'nav.about', path: '/about' },
+    { name: 'nav.contact', path: '/contact' },
   ];
 
   return (
@@ -36,24 +40,21 @@ const Navbar = () => {
             </div>
           </Link>
          
-
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4">
             {navLinks.map((link) => (
               <Link
-                key={link.name}
+                key={link.name} 
                 to={link.path}
                 className="text-sm font-medium text-gray-600 hover:text-primary-light transition-colors"
               >
-                {link.name}
+                {t(link.name)} 
               </Link>
             ))}
-            {/* <Link
-              to="/contact"
-              className="bg-primary-light text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-primary-hover transition-all shadow-lg shadow-blue-200"
-            >
-              Book Now
-            </Link> */}
+            
+            {/* Language Switcher at the end */}
+            <LanguageSwitcher />
+
           </div>
 
           {/* Mobile Menu Button */}
@@ -74,12 +75,12 @@ const Navbar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navLinks.map((link) => (
               <Link
-                key={link.name}
+                key={link.name} 
                 to={link.path}
                 onClick={() => setIsOpen(false)}
                 className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-primary-light hover:bg-gray-50 rounded-md"
               >
-                {link.name}
+                {t(link.name)} 
               </Link>
             ))}
             {/* <Link

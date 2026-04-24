@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { Suspense } from 'react';
 // import { useEffect } from 'react';
 
 // Layout Components
@@ -16,6 +17,11 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
+
+    // Suspense prevents the app from crashing while translations load
+    <Suspense fallback={<div>Loading Translations...</div>}>
+
+
     <Router>
       
       <div className="min-h-screen bg-gray-50">
@@ -42,6 +48,7 @@ function App() {
         
       </div>
     </Router>
+    </Suspense>
   );
 }
 

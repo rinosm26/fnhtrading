@@ -1,0 +1,10 @@
+{
+  "welcome": "Welcome to our app",
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "gallery": "Gallery",
+    "about": "About",
+    "contact": "Contact"
+  }
+}
